@@ -24,3 +24,20 @@
 - Responsive browser workflows meet initial device needs; camera/barcode/offline support can wait for evidence.
 
 None has been tested in this repository. No likelihood scoring, cost figure, external legal opinion, or user research is represented as fact.
+
+## Mitigation and acceptance evidence linkage
+
+| Risk | Proposed work-item evidence |
+| --- | --- |
+| R-01 | GC-I-002 threat/access design; GC-I-005 isolation spike; GC-I-021 independent regression evidence; GC-I-035 release security review. |
+| R-02 | GC-I-003 policy/rights review; GC-I-007 permitted seed search; GC-I-037 future provider comparison. |
+| R-03 | GC-I-003 evidence rules; GC-I-025 structured claim/editorial model; GC-I-026 sourced publication and corrections. |
+| R-04 | GC-I-006 private upload/metadata evidence; GC-I-023 lifecycle; GC-I-029–GC-I-030 separate photo consent and revocation when sharing is selected. |
+| R-05 | GC-I-009 current provider/cost/recovery comparison; GC-I-010 go/no-go; GC-I-034 operational validation. |
+| R-06 | GC-I-001 scope approval; GC-I-022/028/033 slice review; GC-I-035 declared release scope; GC-I-037–GC-I-044 remain investigations. |
+| R-07 | GC-I-008 device spike; GC-I-039 future native/offline/barcode investigation; manual input remains the proposed core path. |
+| R-08 | GC-I-003 policy; GC-I-031 attestations and restricted submissions; GC-I-032 reporting/moderation/takedown; GC-I-033 enablement review. |
+| R-09 | GC-I-020 export; GC-I-027 deletion/retention; GC-I-034 restore/suppression; GC-I-040 future cancellation/essential-record access research. |
+| R-10 | GC-I-001 outcome/discovery review; GC-I-004 UX contract; GC-I-008 prototype evidence. No persona is reported as validated. |
+
+Issue closure requires evidence, not removal of a risk label. The organiser records residual exposure and the responsible human's acceptance at the relevant gate. A rights dispute, untested owner boundary, or unresolved production deletion/recovery policy blocks the affected release.

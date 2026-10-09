@@ -35,6 +35,25 @@ body:
       label: Design and architecture references
       description: Link applicable requirements, designs, ADRs, and diagrams.
   - type: textarea
+    id: workflow
+    attributes:
+      label: Intended behavior and workflow
+      description: Explain normal and failure behavior and include a fenced Mermaid diagram. Label proposed versus implemented behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: trust
+    attributes:
+      label: Security, privacy, and content rights
+      description: Identify ownership/visibility boundaries, sensitive data, rights/provenance checks, and decisions that block delivery.
+    validations:
+      required: true
+  - type: textarea
+    id: handoff
+    attributes:
+      label: Responsible role and independent handoff
+      description: State the stable GC-I identifier, accountable specialist, dependencies, reviewer, and human approval required.
+  - type: textarea
     id: tests
     attributes:
       label: Required tests and evidence
