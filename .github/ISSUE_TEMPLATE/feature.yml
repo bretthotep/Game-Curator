@@ -1,0 +1,56 @@
+name: Feature or vertical slice
+description: Propose a bounded user outcome with reviewable acceptance criteria.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Requirement and rationale
+      description: State the user problem and why this outcome matters.
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: User story or expected outcome
+      placeholder: As a ... I want ... so that ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Include failure, empty, permission, privacy, or accessibility cases as relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and delivery gate
+      description: Link prerequisite issues/decisions and state the gate.
+  - type: textarea
+    id: references
+    attributes:
+      label: Design and architecture references
+      description: Link applicable requirements, designs, ADRs, and diagrams.
+  - type: textarea
+    id: tests
+    attributes:
+      label: Required tests and evidence
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentation impact
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition of done
+      description: Include independent review, security/privacy checks, and actual validation results.
+      value: |
+        - [ ] Acceptance criteria met
+        - [ ] Relevant automated tests added/updated and run
+        - [ ] Security and privacy implications reviewed
+        - [ ] Documentation/diagrams updated
+        - [ ] Independent review completed
+        - [ ] Limitations and actual validation results recorded
