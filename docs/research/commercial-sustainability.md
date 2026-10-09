@@ -4,7 +4,7 @@
 
 ## Potential models
 
-- Free core collection experience, with optional future paid Collector plan for capacity, backup/synchronization, advanced analytics, valuation history, additional art options, public museum customization, exports/insurance reports, or insights.
+- Free core collection experience and essential record export, with an optional future paid Collector plan for capacity, backup/synchronization, advanced analytics, valuation history, additional art options, public museum customization, enhanced reports/insurance reports, or insights.
 - Optional affiliate links may be assessed only as a secondary revenue source with disclosure and no distortion of collection recommendations.
 - Grants, sponsorship, or partnerships are future research questions, not current commitments.
 
@@ -31,3 +31,26 @@ Clearly distinguish asking prices, completed-sale observations, and estimated va
 ## Approval gate
 
 Research must provide a sourced cost comparison, licensing/security review, usage assumptions, downside exposure, and exit/export path. Human product-owner approval is required before paid provider adoption, subscriptions, affiliate commitments, or other commercial commitments.
+
+## Research issue handoffs
+
+| Investigation | Draft issue | Evidence and scope boundary |
+| --- | --- | --- |
+| Core deployment/storage/recovery cost | GC-I-009 | Dated vendor sources and low/typical/high usage assumptions; compare managed/self-managed trade-offs before adopting services. |
+| Licensed catalogue expansion | GC-I-037 | Rights/coverage/cache/export constraints and total cost; no paid catalogue is needed by the private-first slice. |
+| Valuation methodology | GC-I-038 | Distinguish asking price/sale/estimate, disclose sparse/stale evidence and preserve condition/currency/date/provenance; not financial certainty. |
+| Subscription/affiliate sustainability | GC-I-040 | Model operating and support costs, disclosures, cancellation/read-only/export behavior and essential-record access; no approved price/paywall. |
+| Generated artwork/AI support | GC-I-041 | Cost per approved asset including review, rights, caching, deletion and provider replacement; AI cannot supply historical evidence. |
+| Achievements, marketplace, insurance | GC-I-042–GC-I-044 | Independent product-value/abuse/liability/privacy research; no MVP ranking, trading or insurance guarantee. |
+
+```mermaid
+flowchart LR
+  Need[Validated user need] --> Sources[Gather dated terms rights and price evidence]
+  Sources --> Model[State usage assumptions and downside costs]
+  Model --> Controls[Review privacy cancellation portability and conflicts]
+  Controls --> Decision{Human approves bounded commitment?}
+  Decision -->|No| Defer[Defer or revise recommendation]
+  Decision -->|Yes| Scope[Create separately approved implementation scope]
+```
+
+Core owner-only record export remains in F-13 and cannot become an optional paid entitlement by implication. Any proposal for enhanced reports or commercial extras must preserve access to essential records and receive explicit product-owner approval.
