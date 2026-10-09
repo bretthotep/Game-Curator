@@ -11,9 +11,11 @@ This repository is at **Gate 0 — Project Foundation**. It contains project gov
 - [Product vision and personas](docs/product/vision-and-personas.md)
 - [Requirements outline](docs/product/requirements.md)
 - [Proposed MVP and roadmap](docs/product/mvp-scope.md)
+- [User journeys and proposed follow-up backlog](docs/product/user-journeys.md) · [Gate 1–3 work proposals](docs/operations/proposed-backlog.md)
 - [Architecture overview](docs/architecture/overview.md)
 - [Technology evaluation](docs/architecture/technology-evaluation.md)
 - [Risk and assumption register](docs/operations/risks-and-assumptions.md)
+- [Open product-owner decisions](docs/operations/open-decisions.md)
 - [Quality and delivery strategy](docs/quality/testing-and-delivery.md)
 - [Contributor and agent instructions](.github/copilot-instructions.md)
 
