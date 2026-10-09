@@ -295,7 +295,7 @@ Use the [quality evidence contract](../quality/testing-and-delivery.md#evidence-
 
 ## 13. Deployment, observability, recovery, deletion, and retention
 
-Environment topology and vendor selection remain open. Proposed separation of development, isolated test/staging, and production must prevent credentials/data crossing into clients or fixtures. Privileged migrations/cleanup jobs need scoped execution and accountable operator access. No deployment is authorized before human Gate 5.
+Environment topology and vendor selection remain open. Proposed separation of development, isolated test/staging, and production must prevent credentials/data crossing into clients or fixtures. Privileged migrations/cleanup jobs need scoped execution and accountable operator access. No production deployment/release is authorized before human Gate 5. Separately approved disposable experiments using synthetic/permitted seed data and isolated candidate rehearsals may deploy non-production environments at the applicable earlier gate; record scope, access restrictions, costs and cleanup.
 
 Observe request failure/latency classes, denied authorization counts, migration/job outcome, staging/orphan age, cleanup/export backlog, storage/egress volume, provider quota and budget signals. Log only minimal correlation/operation/result data with reviewed retention/access. Never log tokens, passwords, notes, price, photo contents, signed URLs, raw private payloads, or sensitive search terms. Metrics, alerts, on-call/support owner and incident thresholds are approval items, not configured services.
 

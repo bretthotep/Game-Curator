@@ -26,7 +26,7 @@ A web-first experience best tests collection entry and public editorial presenta
 ## Consequences
 
 - Gate 1 must confirm first-slice requirements, security model, data model, API boundary, visual interaction direction, and provider terms.
-- Gate 2 must test authentication/access isolation, private media lifecycle, catalogue search against permitted data, responsive cards/accessibility, camera/barcode feasibility, CI/deployment, backup/restore, and cost assumptions.
+- Gate 2 must test authentication/access isolation, private media lifecycle, catalogue search against permitted data, responsive cards/accessibility, limited device/camera/barcode feasibility, CI/deployment, backup/restore, and cost assumptions. GC-I-008 limits device work to an approved feasibility probe; broader native/offline/capture/barcode-lookup product investigation is GC-I-039, not a Gate 2 feature commitment.
 - Keep provider integrations behind replaceable interfaces and make MVP usable with a small labelled seed dataset and collector-provided metadata/photos.
 - No app, database, service, package, API, paid plan, or production deployment is established by this ADR.
 

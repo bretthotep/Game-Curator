@@ -68,7 +68,7 @@ body:
       description: Include independent review, security/privacy checks, and actual validation results.
       value: |
         - [ ] Acceptance criteria met
-        - [ ] Relevant automated tests added/updated and run
+        - [ ] Relevant automated tests added/updated and run for implementation, or documented N/A with review/research evidence
         - [ ] Security and privacy implications reviewed
         - [ ] Documentation/diagrams updated
         - [ ] Independent review completed

@@ -86,7 +86,7 @@ In the dependency column only, three-digit references abbreviate **GC-I-xxx**; t
 | GC-I-029 | Sharing/privacy design approval | Gate 3c optional | R6,R7; F-12,14; AC-12,13; NFR-01,02,08 | 022,002,003; optional-scope decision |
 | GC-I-030 | Opt-in public profile/collection | Gate 3c optional | R6; F-12,10; AC-05,06,12; NFR-01,02 | 029,021; 023 if photo sharing selected; applicable 032 safeguards before public enablement |
 | GC-I-031 | Rights-attested community submissions | Gate 3c optional | R7; F-14; AC-13; NFR-02,08 | 029,003; 032 moderation readiness before public use |
-| GC-I-032 | Moderation/reports/takedown | Gate 3c optional | R7; F-14,10; AC-06,13; NFR-02,06,08 | 029,003; integrate 031 before launch |
+| GC-I-032 | Moderation/reports/takedown | Gate 3c optional | R7; F-14,10; AC-06,13; NFR-02,06,08 | 029,003; integrate 031 before launch only if community submissions are selected |
 | GC-I-033 | Gate3c acceptance | Gate 3c optional | R6,R7; F-12,14,10,11; AC-05–07,12,13; NFR-01–08 | Selected 030–032; exclusion decisions |
 | GC-I-034 | Operational migration/backup/restore/monitoring/rollback | Gate 4 | R1,R4; F-11,13; AC-07,09; NFR-02–07 | 022,009,027; selected 028/033 |
 | GC-I-035 | Gate4 release candidate validation | Gate 4 | All selected R/F/AC; NFR-01–08 | 027,034,022 + approved release scope; 028/033 only for included optional capabilities |
@@ -709,9 +709,9 @@ flowchart LR
   HumanDecision --> Takedown --> InvalidatePublicUse
   HumanDecision -->|uncertain| Escalation
 ```
-- **Acceptance:** Define authorised moderation roles/decisions and no contributor self-approval. Reports work without leaking reporter identity; malformed/duplicate/spam paths are bounded. Removed/revoked art cannot remain fallback or cached public asset; personal photo selection never changes. Rights disputes, repeat-abuse and appeals follow approved human process, no automatic legal conclusions. Failed takedown/cache invalidation remains visible with retry/escalation and publication restrictions.
-- **Dependencies/handoff:** GC-I-029/003; integrate GC-I-031 before launch. Accountable content curator for review operations; developer implements → security/QA/code reviewer; owner approves staffing/legal exceptions.
-- **Tests/evidence:** Role matrix, approved/rejected/removed transitions, report abuse, audit minimisation, cache/fallback revocation and failure recovery.
+- **Acceptance:** Define authorised moderation roles/decisions and no contributor self-approval. Reports work without leaking reporter identity; malformed/duplicate/spam paths are bounded. Removed/revoked art cannot remain fallback or cached public asset; personal photo selection never changes. Rights disputes, repeat-abuse and appeals follow approved human process, no automatic legal conclusions. Failed takedown/cache invalidation remains visible with retry/escalation and publication restrictions. For sharing-only scope, demonstrate reporting, authorised restriction/withdrawal of the public projection, cache invalidation and escalation without requiring a submission queue or community publication.
+- **Dependencies/handoff:** GC-I-029/003; integrate GC-I-031 before launch only when community submissions are selected. Sharing-only scope requires the public reporting/restriction controls approved by GC-I-029, not GC-I-031. Accountable content curator for review operations; developer implements → security/QA/code reviewer; owner approves staffing/legal exceptions.
+- **Tests/evidence:** Role matrix, report abuse, audit minimisation, cache revocation and failure recovery for selected scope; sharing-only public-projection restriction rehearsal; submission approval/rejection/art-removal transitions only when community scope is included.
 - **Security/privacy:** Restrict reports/audits; authorised media access only, minimum retained dispute data.
 - **Docs:** ART, HIST, PRIV, ARCH, QA, RISK, DEC; actual queue/takedown runbook and accountable coverage.
 - **DoD:** Common DoD plus staffed reviewed moderation/takedown path; uncertainty escalated, not hidden.

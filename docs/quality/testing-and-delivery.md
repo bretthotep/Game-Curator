@@ -29,7 +29,7 @@ Every implementation PR should have issue/acceptance linkage, focused diff, auto
 - Gate 2: repeatable spike evidence for the highest-risk assumptions.
 - Gate 3: per-slice tests/review/docs with passing mandatory checks.
 - Gate 4: release candidate test suite, accessibility/security/dependency review, production config, migration, backup/restore, monitoring, and rollback evidence.
-- Gate 5: human approval after a release-readiness report; do not deploy before approval.
+- Gate 5: human approval after a release-readiness report; do not deploy to production or release before approval. Separately approved disposable, synthetic/seed-data experiments and isolated candidate rehearsals may use non-production deployments at earlier gates.
 
 ## Reporting
 

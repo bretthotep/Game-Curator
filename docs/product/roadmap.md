@@ -45,7 +45,7 @@ Review these together before implementation. GC-I-001 and GC-I-003 must explicit
 | GC-I-009 | Deployment/recovery/cost spike |
 | GC-I-010 | Gate2 evidence review |
 
-Approved independent spikes can run in parallel; GC-I-010 consumes their actual evidence and unresolved limitations. Media investigation does not make photo delivery mandatory. GC-I-008 is responsive/device feasibility, not a commitment to native/offline/camera/barcode features; that investigation is GC-I-039.
+Approved independent spikes can run in parallel; GC-I-010 consumes their actual evidence and unresolved limitations. Media investigation does not make photo delivery mandatory. GC-I-008 is responsive/device feasibility and may include a separately approved limited camera/barcode feasibility probe; it is not a production scanner, provider-lookup integration or native/offline commitment. Broader native/offline/capture/barcode product investigation is GC-I-039.
 
 ### Gate 3a — GC-I-011–022
 

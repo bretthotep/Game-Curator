@@ -33,7 +33,7 @@ No packages, providers, current pricing, licenses, service-level commitments, AP
 2. Upload, retrieve, replace, and delete an allowed personal photo privately; test file validation, metadata leakage, size limits, access URLs, and deletion semantics.
 3. Exercise catalogue search against only an owned/licensed seed dataset; document incomplete data behavior and provider replacement boundary.
 4. Prototype responsive collection card/detail form with keyboard, narrow viewport, zoom, and reduced motion checks.
-5. Assess browser camera/barcode feasibility on target devices without assuming support.
+5. Assess limited browser camera/barcode feasibility on target devices in an approved GC-I-008 probe without assuming support or implementing a production scanner/provider lookup. Broader native/offline/capture/barcode product investigation remains GC-I-039.
 6. Verify CI reproducibility, migration workflow, backup/restore options, deployment constraints, and estimated costs using current published plans and a stated usage model.
 
 Each spike needs recorded environment, exact steps/results, limitations, and recommendation. No spike is claimed complete.
