@@ -2,7 +2,7 @@
 
 **Status:** No application or toolchain has been selected or implemented. This document intentionally does not invent setup commands.
 
-At Gate 0 the repository contains documentation, GitHub workflow templates, and editor settings only. There is no package manifest, application code, test suite, database migration, seed SQL, deployment configuration, or CI workflow. Therefore there is no verified local run/build/test command.
+At Gate 0 the repository contains planning documentation, GitHub issue and pull request templates, reusable prompts, and specialist agent guidance only. There is no package manifest, application code, test suite, database migration, seed SQL, deployment configuration, or CI workflow. Therefore there is no verified local run/build/test command.
 
 After Gate 1 approval, the first implementation issue should establish the approved web stack and reproducible local setup, including:
 

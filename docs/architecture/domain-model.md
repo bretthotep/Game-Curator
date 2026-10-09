@@ -12,6 +12,7 @@ erDiagram
   PLATFORM ||--o{ RELEASE : targets
   RELEASE ||--o{ PHYSICAL_COPY : identifies
   COLLECTOR ||--o{ COLLECTION : owns
+  COLLECTOR ||--o{ PHYSICAL_COPY : owns
   COLLECTION ||--o{ COLLECTION_COPY : groups
   PHYSICAL_COPY ||--o{ COLLECTION_COPY : appears_in
   PHYSICAL_COPY ||--o{ PERSONAL_PHOTO : documents

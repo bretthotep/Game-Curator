@@ -10,7 +10,7 @@ This repository is at **Gate 0 — Project Foundation**. It contains project gov
 
 - [Product vision and personas](docs/product/vision-and-personas.md)
 - [Requirements outline](docs/product/requirements.md)
-- [Proposed MVP and roadmap](docs/product/mvp-scope.md)
+- [Proposed MVP](docs/product/mvp-scope.md) · [Prioritised roadmap](docs/product/roadmap.md)
 - [User journeys and proposed follow-up backlog](docs/product/user-journeys.md) · [Gate 1–3 work proposals](docs/operations/proposed-backlog.md)
 - [Architecture overview](docs/architecture/overview.md)
 - [Technology evaluation](docs/architecture/technology-evaluation.md)
@@ -21,6 +21,6 @@ This repository is at **Gate 0 — Project Foundation**. It contains project gov
 
 ## Decisions and status
 
-The initial technology choices, domain model, and architecture are proposals, not approved commitments. See [ADR-0001](docs/architecture/decisions/0001-provisional-technology-and-modular-monolith.md) and the [roadmap](docs/product/mvp-scope.md). Paid services, public sharing, production deployment, and irreversible architecture decisions require explicit human approval.
+The initial technology choices, domain model, and architecture are proposals, not approved commitments. See [ADR-0001](docs/architecture/decisions/0001-provisional-technology-and-modular-monolith.md), the [proposed MVP](docs/product/mvp-scope.md), and the [prioritised roadmap](docs/product/roadmap.md). Paid services, public sharing, production deployment, and irreversible architecture decisions require explicit human approval.
 
 No GitHub issues, tests, integrations, or deployments are claimed as completed by this foundation. Continue with Gate 1 product and architecture review before implementation.
