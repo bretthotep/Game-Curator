@@ -1,0 +1,14 @@
+# Local environment and secret material
+.env
+.env.*
+!.env.example
+
+# Common editor, operating-system, and build artifacts
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+coverage/
+.next/
