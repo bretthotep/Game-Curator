@@ -36,3 +36,25 @@ These are design hypotheses, not evidence of completed user research. Validate t
 ## Success signals to validate
 
 Proposed early signals are successful completion of first-copy entry, ability to find and distinguish an owned copy later, user comprehension of privacy visibility, and collection-card readability across device sizes. Define measurement and consent before adding analytics. Do not treat collection monetary value as a success metric.
+
+## Requirements and research handoff
+
+| Persona hypothesis | Proposed outcome / requirements | Validation and delivery references |
+| --- | --- | --- |
+| Casual collector | R1, R3 / F-01–F-04, F-07–F-08, F-10 | GC-I-001 outcome review; GC-I-004/008 interaction evidence; GC-I-013–GC-I-019 private collecting loop. |
+| Archivist | R2, R4 / F-05, F-13 | GC-I-001 controlled vocabularies and uncertainty; GC-I-017 copy attributes; GC-I-020 export. |
+| Preservation-minded historian | R5 / F-09, NFR-08 | GC-I-003 evidence policy; GC-I-025–GC-I-026 separate editorial slice. |
+| Visual curator | R3, R4, optional R6 / F-06–F-08, F-12 | GC-I-018 cards; GC-I-023 private photos; GC-I-029–GC-I-030 sharing only if approved. |
+| Privacy-conscious owner | R1, R4, optional R6 / F-01, F-04, F-06, F-12–F-13, NFR-02 | GC-I-005/021 isolation evidence; GC-I-020 export; GC-I-027 deletion; separate sharing approval. |
+
+```mermaid
+flowchart LR
+  Hypothesis[Persona and collector need hypothesis] --> Review[Product-owner-approved discovery]
+  Review --> Evidence[Record findings uncertainty and consent]
+  Evidence --> Scope[Review requirements and first-slice exclusions]
+  Scope --> Approval{Human scope approval?}
+  Approval -->|No| Hypothesis
+  Approval -->|Yes| Backlog[Authorize only linked phased work]
+```
+
+GC-I-001 must decide which research is needed and what first-copy success means before implementation. This traceability table does not turn personas into validated findings or make public sharing, paid providers, valuation, or native capture mandatory.

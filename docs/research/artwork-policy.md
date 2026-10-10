@@ -32,3 +32,27 @@ A vote cannot change or replace the personal selection. A missing/unavailable ph
 ## Provider boundary and lifecycle
 
 Keep generation and external image retrieval behind replaceable interfaces. Record source/creator, rights attestation/permission basis, attribution, moderation status, visibility, version, dates, and takedown state. Cache only where rights permit. Do not make expensive generation or catalogue imagery a mandatory MVP dependency.
+
+## Delivery boundaries and lifecycle evidence
+
+GC-I-003 reviews rights policy; GC-I-006/GC-I-023 establish private personal-photo processing; GC-I-029/GC-I-030 govern any separately consented public use; GC-I-031/GC-I-032 govern community distribution. GC-I-041 is only an investigation of generated artwork/AI assistance. Voting rules and generated defaults are not approved or required by the first slice.
+
+```mermaid
+flowchart TD
+  Media[Identify media category] --> Personal{Personal copy photo?}
+  Personal -->|Yes| Private[Validate and store owner-only]
+  Private --> Selected[Owner may select private card photo]
+  Selected --> Consent[Separate approved consent needed for public use]
+  Personal -->|No| Rights[Record provenance rights and attribution]
+  Rights --> Review[Screen and review permitted distribution]
+  Review --> Approved{Approval valid?}
+  Approved -->|No| Placeholder[Use neutral placeholder]
+  Approved -->|Yes| Catalogue[Eligible catalogue fallback]
+  Catalogue --> Report[Rights report expiry or withdrawal]
+  Report --> Restrict[Restrict distribution and invalidate controlled copies]
+  Restrict --> Placeholder
+```
+
+For each implemented category, test unavailable/deleted assets, expired permission, rejected/held submissions and fallback behavior. Removing catalogue art cannot delete an owner's private photo selection; an unavailable personal photo offers replacement and a lawful fallback without quietly publishing another private asset.
+
+The moderator's decision records the reviewed basis, permitted scope, rationale, reviewer and timestamp; automated screening and popularity do not establish ownership. Takedown must address stored assets, derivatives, references and controlled caches, while explaining that already downloaded third-party copies cannot be recalled. Rights disputes require human escalation rather than majority voting.

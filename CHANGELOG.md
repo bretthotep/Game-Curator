@@ -6,3 +6,4 @@ All notable project changes will be documented here. This repository is pre-MVP;
 
 - Established Gate 0 project foundation: product/architecture/security/research/quality proposals, specialist agent guidance, GitHub issue and pull request templates, reusable prompts, and risk register.
 - No application features, integrations, tests, or deployment were delivered in this foundation.
+- Expanded the review package with detailed proposed requirements and Mermaid workflows, phased issue-ready specifications, a technical design/data dictionary, and aligned design, security, quality and agent handoff guidance. Issue drafts are not created GitHub issues and do not grant implementation approval.

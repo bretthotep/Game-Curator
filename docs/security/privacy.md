@@ -35,3 +35,43 @@ Cross-account record/object enumeration; insecure direct object reference; overl
 ## Escalation
 
 Stop and escalate any suspected private-data exposure, privileged-key leak, rights dispute, high-impact vulnerability, or untested access boundary. No claim of legal compliance or security certification is made.
+
+## Implementation and evidence ownership
+
+NFR-02 is the cross-cutting security/privacy requirement. The [technical design](../architecture/overview.md) describes proposed enforcement; the [backlog](../operations/proposed-backlog.md) assigns work. Security controls cannot be satisfied by hiding UI elements or by trusting a client-supplied owner ID.
+
+| Control / boundary | Proposed implementation behavior | Issue evidence |
+| --- | --- | --- |
+| Identity to server | Derive actor from validated session; reject absent/expired/revoked sessions; protect state changes under the approved session/CSRF model. | GC-I-002, GC-I-005, GC-I-013 |
+| Server to persistence | Authorize each operation and scope reads/writes to owner; enforce corresponding database policies/constraints, including collection membership. Privileged maintenance access requires a separate controlled path. | GC-I-012, GC-I-016, GC-I-021 |
+| Export | Recheck identity and ownership; allow-list documented fields; protect temporary artefacts/downloads; avoid cross-user joins or public export caches. | GC-I-020, GC-I-021 |
+| Private media | Bind upload intent and object to owner/copy; process only permitted files; publish no personal object by default; reauthorize reads/replacements/deletes and minimize URL lifetime. | GC-I-006, GC-I-023 |
+| Public projection, future | Read only explicitly shared collections through an approved projection; exclude identity, paid price, notes and private metadata; personal photo consent is separate; revoke future access and controlled caches. | GC-I-029–GC-I-030 |
+| Editorial and community, future | Separate reader, submitter and reviewer capabilities; submissions cannot publish themselves; rights/safety reports can restrict distribution pending human review. | GC-I-025–GC-I-026, GC-I-031–GC-I-032 |
+| Deletion and recovery | Explain approved retention exceptions; revoke sessions/sharing, delete covered rows/objects/derived media, reconcile partial failures, expire backups and apply deletion suppression on restore. | GC-I-027, GC-I-034 |
+| Delivery and operations | Environment separation, least-privilege secret access, dependency checks, minimal redacted logs, access-controlled backups, incident and rollback ownership. | GC-I-009, GC-I-011, GC-I-034–GC-I-035 |
+
+## Proposed personal-data lifecycle
+
+```mermaid
+flowchart TD
+  Collect[Collect only approved necessary fields] --> Private[Owner-only records and media]
+  Private --> Export[Owner requests portable export]
+  Export --> Private
+  Private --> Consent[Optional explicit sharing of approved projection]
+  Consent --> Revoke[Withdraw consent and invalidate controlled distribution]
+  Revoke --> Private
+  Private --> Delete[Confirm approved account deletion]
+  Delete --> Restrict[Revoke sessions and public access]
+  Restrict --> Purge[Delete covered primary and derived data]
+  Purge --> Exceptions[Track approved retention exceptions and backup expiry]
+  Exceptions --> Restore[Apply suppression if a backup is restored]
+```
+
+Account deletion must be ready before production personal data is accepted, regardless of whether the photo/community phases are included. The product owner must decide confirmation/recovery behavior, retention periods and any lawful exceptions; no duration or legal compliance is promised by this proposal.
+
+Short-lived media URLs reduce future exposure but cannot retract files already downloaded. Sharing consent must explain that limitation. Avoid private response caching across sessions; public revocation must address application/CDN/search-index caches under the selected topology without promising deletion of third-party copies.
+
+### Agent security handoff
+
+The solution architect supplies trust boundaries and approved policies; the developer supplies enforcement and negative-test evidence; the security engineer reviews controls; QA independently exercises account A/account B and anonymous cases; DevOps verifies secret, storage, restore and logging configuration. Unresolved access-control, deletion, or rights risks block the relevant gate and cannot be accepted by the implementing agent alone.

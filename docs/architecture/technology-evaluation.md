@@ -33,7 +33,24 @@ No packages, providers, current pricing, licenses, service-level commitments, AP
 2. Upload, retrieve, replace, and delete an allowed personal photo privately; test file validation, metadata leakage, size limits, access URLs, and deletion semantics.
 3. Exercise catalogue search against only an owned/licensed seed dataset; document incomplete data behavior and provider replacement boundary.
 4. Prototype responsive collection card/detail form with keyboard, narrow viewport, zoom, and reduced motion checks.
-5. Assess browser camera/barcode feasibility on target devices without assuming support.
+5. Assess limited browser camera/barcode feasibility on target devices in an approved GC-I-008 probe without assuming support or implementing a production scanner/provider lookup. Broader native/offline/capture/barcode product investigation remains GC-I-039.
 6. Verify CI reproducibility, migration workflow, backup/restore options, deployment constraints, and estimated costs using current published plans and a stated usage model.
 
 Each spike needs recorded environment, exact steps/results, limitations, and recommendation. No spike is claimed complete.
+
+## Work-item and technical-design alignment
+
+The [technical design document](overview.md) expands the proposed system and trust boundaries; it does not replace this alternatives assessment or approve ADR-0001. The [backlog](../operations/proposed-backlog.md) separates the experiments:
+
+| Evaluation | Stable draft work item |
+| --- | --- |
+| Identity and owner isolation | GC-I-005 |
+| Private file processing/access/replacement/deletion | GC-I-006 |
+| Permitted seed search and unknown catalogue behavior | GC-I-007 |
+| Responsive accessibility and device/camera feasibility | GC-I-008 |
+| CI/deployment, migration/recovery and current costs/terms | GC-I-009 |
+| Comparative evidence, revised ADR and human Gate 2 go/no-go | GC-I-010 |
+
+Investigations may recommend an alternative or a no-go. They must document what was emulated versus connected to a real provider, cleanup of temporary data/resources, failure modes, vendor portability, and unsupported capabilities. Do not adopt a tool merely because it appears in the candidate defaults.
+
+Future catalogue/valuation/native/commercial/generated-art proposals are scoped as GC-I-037–GC-I-041, with additional product investigations GC-I-042–GC-I-044. None adds a dependency to the private collecting MVP. Approved runtime/package versions and verified commands will be recorded by GC-I-011 in the [local development guide](../operations/local-development.md).
