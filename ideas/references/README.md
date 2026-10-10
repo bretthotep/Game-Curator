@@ -2,10 +2,18 @@
 
 This folder is a working library for inspiration, research captures, sketches, and candidate UI directions. It is **not** the source of truth for approved product design or production assets.
 
+## Start here
+
+- [Reference index](REFERENCE-INDEX.md) — source/rights notes and intended lessons for each visual.
+- [Visual direction board](visual-direction/gamecurator-visual-direction.svg) — editorial tone, palette, and visual hierarchy.
+- [Collection screen concept](collection-ui/collection-screen-concept.svg) — collection browsing and add-copy hierarchy.
+- [History exhibit concept](game-history-exhibits/history-exhibit-concept.svg) — timeline and evidence presentation.
+- [Original pixel-art study](pixel-art/original-art-direction-study.svg) — generic, original geometric style exploration.
+
 ## How to use this folder
 
 - Keep source files intact where practical; use descriptive filenames and avoid overwriting originals.
-- Record the source URL, creator/owner, date captured, intended use, and any known licence/usage restrictions in the reference index below.
+- Record source URL, creator/owner, date captured, intended use, and known licence/usage restrictions in the reference index.
 - Separate visual inspiration from approved designs. Nothing here is automatically approved for implementation.
 - Do not treat an image being publicly viewable as permission to redistribute it or ship it in the product.
 - Do not commit confidential, private, or personally identifying material without an appropriate basis.
@@ -13,25 +21,17 @@ This folder is a working library for inspiration, research captures, sketches, a
 - For copyrighted game cover art, logos, characters, screenshots, and packaging, use references for analysis only unless usage rights are confirmed. Do not repackage them as GameCurator assets.
 - Production assets should live in the app's designated asset locations after design and rights review, not in this ideas folder.
 
-## Suggested categories
+## Category guide
 
-- `visual-direction/` — overall art direction, typography, colour, tone, and visual language.
-- `collection-ui/` — browsing, filters, collection cards, copy detail, and collection management.
-- `game-history-exhibits/` — editorial layouts, citations, timelines, and museum-like storytelling.
-- `pixel-art/` — original pixel-art studies and style exploration; avoid copying protected characters or artwork.
-- `collector-profile/` — profile, collection presentation, and sharing concepts.
+- visual-direction/ — overall art direction, typography, colour, tone, and visual language.
+- collection-ui/ — browsing, filters, collection cards, copy detail, and collection management.
+- game-history-exhibits/ — editorial layouts, citations, timelines, and museum-like storytelling.
+- pixel-art/ — original pixel-art studies and style exploration; avoid copying protected characters or artwork.
+- collector-profile/ — profile, collection presentation, and sharing concepts. Create this folder when there is a concrete reference to store.
 
-Create a category folder only when it has a reference or a useful index to hold.
+## Current status
 
-## Current intake status
-
-No image files were present in the repository when this index was prepared. Images attached in chat are not automatically available to GitHub tools. Add the source files or provide accessible source links, then update the index below.
-
-## Reference index
-
-| File / link | Category | What to study | Source / creator | Rights / status |
-| --- | --- | --- | --- | --- |
-| _No references ingested yet_ | — | — | — | Pending asset intake |
+The initial reference set consists of original SVG concepts authored for this repository. They use fictional game titles and abstract artwork. They are not screenshots of an existing product, licensed game artwork, final UI, or a validated accessible design system.
 
 ## Review checklist
 
@@ -42,3 +42,4 @@ Before a reference informs implementation, record:
 3. Is the source accurate and relevant to GameCurator's physical-collection/museum focus?
 4. Is redistribution permitted, or should the repo retain only a link and notes?
 5. Is the result inspiration, a proposal, or an approved design?
+6. Has the product owner explicitly approved it for implementation?

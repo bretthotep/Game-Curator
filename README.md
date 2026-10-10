@@ -17,6 +17,8 @@ This repository is at **Gate 0 — Project Foundation**. It contains project gov
 - [Risk and assumption register](docs/operations/risks-and-assumptions.md)
 - [Open product-owner decisions](docs/operations/open-decisions.md)
 - [Quality and delivery strategy](docs/quality/testing-and-delivery.md)
+- [Visual reference library](ideas/references/README.md) · [Reference index](ideas/references/REFERENCE-INDEX.md)
+- [Latest repository recheck](docs/reviews/repository-recheck-2026-10-10.md)
 - [Contributor and agent instructions](.github/copilot-instructions.md)
 
 ## Decisions and status
@@ -29,7 +31,7 @@ No GitHub issues, tests, integrations, or deployments are claimed as completed b
 
 1. Review the requirements and MVP boundary, then the technical design, domain model, privacy controls, and content policies.
 2. Resolve the [open decisions](docs/operations/open-decisions.md) through the Gate 1 approval issues. Diagrams describe proposed workflows, not running services.
-3. Use the backlog's stable `GC-I-*` identifiers to review and file individual issues. These are detailed issue drafts, **not created GitHub issues**; record real issue URLs when they are filed.
+3. Use the backlog's stable GC-I-* identifiers to review and file individual issues. These are detailed issue drafts, **not created GitHub issues**; record real issue URLs when they are filed.
 4. Review Gate 2 evidence before authorizing the private collecting slice. Photos, editorial content, and public/community features remain separately gated; they are not mandatory for a private-first release.
 5. Follow the [agent handoff and setup contract](docs/operations/local-development.md) and [acceptance evidence strategy](docs/quality/testing-and-delivery.md). No verified application commands exist yet.
 
