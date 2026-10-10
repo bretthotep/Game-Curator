@@ -1,13 +1,13 @@
 # GameCurator reference index
 
-These are original, repository-authored SVG concept assets. They are meant to support Gate 1 discussion and are not approved production screens or a final design system.
+These SVGs are described as repository-authored concept assets for Gate 1 discussion; their individual creators, rights owners, and applicable licences have not been independently recorded. They are not approved production screens or a final design system.
 
-| Asset | Category | Intended lesson | Source / rights | Status |
-| --- | --- | --- | --- | --- |
-| [Visual direction board](visual-direction/gamecurator-visual-direction.svg) | Visual direction | Editorial tone, type hierarchy, warm paper/ink and restrained accent palette | Original SVG created for this repository; no third-party game art | Concept |
-| [Collection screen concept](collection-ui/collection-screen-concept.svg) | Collection UI | Search and add-copy action hierarchy, distinct owned-copy counts, responsive card rhythm | Original SVG created for this repository; all sample titles/art are fictional | Concept |
-| [History exhibit concept](game-history-exhibits/history-exhibit-concept.svg) | Historical exhibit | Editorial sections, timeline and visible source/claim provenance | Original SVG created for this repository; fictional events, no factual claims | Concept |
-| [Pixel-art direction study](pixel-art/original-art-direction-study.svg) | Pixel-art exploration | Limited palette, crisp silhouettes and original geometric forms | Original SVG created for this repository; not derived from a named game | Concept |
+| Asset | Category | Intended lesson | Creator | Rights owner | Creation date | Source / redistribution terms | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Visual direction board](visual-direction/gamecurator-visual-direction.svg) | Visual direction | Editorial tone, type hierarchy, warm paper/ink and restrained accent palette | Not individually attributed; described as repository-authored | Not established | Not recorded; first committed 2026-10-10 | No licence or redistribution permission is documented; do not redistribute or reuse beyond this repository absent confirmation. No third-party game art is identified. | Concept |
+| [Collection screen concept](collection-ui/collection-screen-concept.svg) | Collection UI | Search and add-copy action hierarchy, distinct owned-copy counts, responsive card rhythm | Not individually attributed; described as repository-authored | Not established | Not recorded; first committed 2026-10-10 | No licence or redistribution permission is documented; do not redistribute or reuse beyond this repository absent confirmation. Sample titles and art are fictional. | Concept |
+| [History exhibit concept](game-history-exhibits/history-exhibit-concept.svg) | Historical exhibit | Editorial sections, timeline and visible source/claim provenance | Not individually attributed; described as repository-authored | Not established | Not recorded; first committed 2026-10-10 | No licence or redistribution permission is documented; do not redistribute or reuse beyond this repository absent confirmation. Events are fictional; no factual claims are made. | Concept |
+| [Pixel-art direction study](pixel-art/original-art-direction-study.svg) | Pixel-art exploration | Limited palette, crisp silhouettes and original geometric forms | Not individually attributed; described as repository-authored | Not established | Not recorded; first committed 2026-10-10 | No licence or redistribution permission is documented; do not redistribute or reuse beyond this repository absent confirmation. Not identified as derived from a named game. | Concept |
 
 ## Usage notes
 

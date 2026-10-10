@@ -46,7 +46,7 @@ The README says Gate 0 while several documents are now described as Gate 1 revie
 
 ### P2 — Separate reference assets from approved production assets
 
-The reference folder should retain source, author/creator, rights status, intended lesson and approval state. The newly added SVGs are original repository-authored illustrations; they can be redistributed with the repository, but remain concepts rather than an approved design system. For external images, prefer a source link and observations unless permission to commit the actual image is clear.
+The reference folder should retain source, author/creator, rights status, intended lesson and approval state. The SVGs are described as repository-authored illustrations, but their individual creator/owner and any applicable licence or redistribution permission are not independently recorded. Repository presence is not permission, so no redistribution right is claimed. For external images, prefer a source link and observations unless permission to commit the actual image is clear.
 
 ### P2 — Avoid treating diagrams as proof
 
