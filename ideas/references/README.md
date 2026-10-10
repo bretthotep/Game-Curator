@@ -5,7 +5,7 @@ This folder is a working library for inspiration, research captures, sketches, a
 ## How to use this folder
 
 - Keep source files intact where practical; use descriptive filenames and avoid overwriting originals.
-- Record the source URL, creator/owner, date captured, intended use, and any known licence/usage restrictions in `REFERENCE-INDEX.md`.
+- Record the source URL, creator/owner, date captured, intended use, and any known licence/usage restrictions in the reference index below.
 - Separate visual inspiration from approved designs. Nothing here is automatically approved for implementation.
 - Do not treat an image being publicly viewable as permission to redistribute it or ship it in the product.
 - Do not commit confidential, private, or personally identifying material without an appropriate basis.
