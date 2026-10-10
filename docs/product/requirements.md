@@ -339,8 +339,8 @@ flowchart TD
 - **Story/outcome:** As a collector, I want to choose whether and what to share, understand the public view, and withdraw sharing without accidentally exposing private context (R6; AC-12).
 - **Intended behavior:** Keep records private until an explicit approved sharing action. Before enabling public profile/collection, approve visibility rules for each data category, including price/acquisition details and personal photos, plus indexing, revocation, and abuse considerations. Preview the intended public projection; do not assume an all-fields-public model.
 - **Normal workflow:** Owner reviews visibility information and preview, explicitly enables approved sharing, checks the public view, and later changes or withdraws it.
-- **Failure workflow:** Cancelled or failed opt-in leaves privacy unchanged; failed visibility updates are not presented as completed. Unauthorized changes are denied. Withdrawal failures and limits on externally copied/indexed information must be explained, not concealed or promised away.
-- **Acceptance/evidence:** Fresh private fixtures expose no public collection; cancelled consent changes nothing. Explicit opt-in exposes only approved fields, including direct public retrieval, and never unapproved price/acquisition/media. Withdrawal removes product-controlled public access under the approved policy. Evidence: consent/visibility/revocation matrix, public/private field tests, direct access and abuse cases, keyboard/assistive preview walkthrough, security approval.
+- **Failure workflow:** Cancelled or failed opt-in leaves privacy unchanged; failed visibility updates are not presented as completed. Unauthorized changes are denied. Withdrawal revokes consent and blocks new public requests immediately; if controlled-cache cleanup cannot complete, report it as pending and retry without restoring public access. Explain limits on externally copied/indexed information without promising its removal.
+- **Acceptance/evidence:** Fresh private fixtures expose no public collection; cancelled consent changes nothing. Explicit opt-in exposes only approved fields, including direct public retrieval, and never unapproved price/acquisition/media. Withdrawal immediately blocks new product-controlled public requests, including while controlled-cache cleanup is pending. Evidence: consent/visibility/revocation matrix, public/private field tests, direct access and abuse cases, cleanup-pending tests, keyboard/assistive preview walkthrough, security approval.
 - **Privacy/accessibility:** Consent must be understandable and not coerced by a default-on setting or a reward. Public and owner views need distinct names/state; visibility changes and consequences must be accessible.
 - **Traceability/disposition:** Deferred; optional Gate 3c only. GC-I-029 approval and GC-I-030 implementation, GC-I-032 public safety dependencies, GC-I-033 evidence. Not required for private-first release.
 
@@ -362,12 +362,13 @@ flowchart TD
     M -->|Yes| F
     M -->|No| N[Explain failure and retain last confirmed public visibility]
     N -->|Correct or retry| K
-    G -->|Withdraw sharing| H{Withdrawal confirmed?}
-    H -->|Yes| A
-    H -->|No| I[Explain failure and retain last confirmed public visibility]
-    I --> O{Retry withdrawal?}
-    O -->|Yes| H
-    O -->|No| F
+    G -->|Withdraw sharing| H[Immediately revoke consent and block new public requests]
+    H --> I{Controlled-cache cleanup confirmed?}
+    I -->|Yes| A
+    I -->|No| J[Report cleanup pending; keep new public requests blocked]
+    J --> O{Retry cleanup?}
+    O -->|Yes| I
+    O -->|No| K[Remain private; surface cleanup pending]
 ```
 
 ### F-13 — Owner-only portable collection export

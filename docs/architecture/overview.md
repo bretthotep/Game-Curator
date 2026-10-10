@@ -188,7 +188,7 @@ Recommend relational persistence for foreign keys and transactions; PostgreSQL i
 Proposed constraints and query-aligned indexes:
 
 - Stable entity identities; required owner references for private aggregates and owner-bound export/deletion work. Provider IDs unique only within provider/namespace; titles are not globally unique.
-- Game and Platform determine Release identity; an owned Physical Copy does not become the Release record. Do not enforce uniqueness on `(owner, release)` because multiple copies are valid.
+- A Release identity references a Game and a Platform through foreign keys; multiple Release/Edition identities may reference the same pair. An owned Physical Copy references a Release and does not become the Release record. Do not enforce uniqueness on `(owner, release)` because multiple copies are valid.
 - Membership requires equal collection owner and copy owner. Candidate composite owner/reference foreign keys enforce this at persistence as well as server policy; apply equivalent constraints to photo and selected-photo references.
 - Null unknowns differ from zero price or an invented date. Validate paid amount/currency pairing, non-negative amount with approved precision, and future valuation lower/upper bounds independently.
 - Candidate indexes: owner plus copy identity/lifecycle for private lookup; owner plus approved sort key and stable ID for list pagination; owner/collection/copy for membership; release foreign keys; owner/copy/lifecycle for photos; provider namespace/ID; exhibit/version and claim/source links. Search strategy and full-text indexes await seed/query evidence.

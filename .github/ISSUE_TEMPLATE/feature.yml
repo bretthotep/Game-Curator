@@ -53,6 +53,8 @@ body:
     attributes:
       label: Responsible role and independent handoff
       description: State the stable GC-I identifier, accountable specialist, dependencies, reviewer, and human approval required.
+    validations:
+      required: true
   - type: textarea
     id: tests
     attributes:
