@@ -59,3 +59,88 @@ flowchart LR
 ```
 
 No design token values, formal conformance target, analytics event, or visual system is selected here. GC-I-004 must resolve these without introducing shelves, monetary prestige, or mandatory paid artwork.
+
+## Gate 1 collection and detail concepts
+
+**Status:** Three low-fidelity proposals for GC-I-004, not approved designs, interactive prototypes, or usability evidence. All imagery below is a neutral placeholder; no third-party artwork, real personal data, or historical claim is supplied. Use the [synthetic collecting scenario](../product/user-journeys.md#gate-1-synthetic-collecting-scenario) for comparison and record the human selection in the [Gate 1 review package](../operations/open-decisions.md#gate-1-review-package).
+
+### A — Editorial gallery
+
+An image-forward collection with generous whitespace and short museum-style object labels. Detail opens as a separate reading surface, with catalogue and personal context visibly separated.
+
+```text
+MY COLLECTION — Private                     Add a physical copy
+Search my copies
+
+[Neutral image]                 [Neutral image]
+Paper Comet                     Paper Comet
+Sample Console / Release R-A     Sample Console / Release R-A
+Copy C-A1 · manual present       Copy C-A2 · completeness unknown
+View my copy                    View my copy
+
+COPY C-A1 — Private
+[Neutral image]  Catalogue: Paper Comet / Sample Console / R-A
+My copy: condition unknown · manual present · price paid unknown
+Edit my copy | Add another copy | View catalogue release
+```
+
+On narrow screens cards become a single column and the detail image precedes labelled text. Keyboard order follows search, add action, then each card's copy link; returning from detail should restore focus to that copy. Risk to evaluate: large images may slow scanning and push management actions below the initial view.
+
+### B — Archive index
+
+A compact typographic index with small image accents. Selecting a copy leads to a two-section object record rather than implying that a title row is an owned object.
+
+```text
+MY COLLECTION — Private                     Add a physical copy
+Search my copies
+Image   Game / platform / release              My physical copy
+[—]     Paper Comet / Sample Console / R-A      C-A1 · manual present
+[—]     Paper Comet / Sample Console / R-A      C-A2 · unknown
+
+COPY C-A1 — Private
+CATALOGUE RECORD                 MY OBJECT
+Paper Comet                     Condition: unknown
+Sample Console / R-A            Components: manual present
+Region: unknown                 Price paid: unknown
+View catalogue release          Edit my copy | Add another copy
+```
+
+On narrow screens each row becomes a labelled stacked record; catalogue and object sections stack without losing headings. Each row has a descriptive copy link, not a click-only container. Risk to evaluate: efficient scanning could feel like an inventory spreadsheet unless typography, spacing and object labels retain editorial character.
+
+### C — Object dossier
+
+Quiet image-and-text cards lead to a copy-focused dossier with a prominent release breadcrumb and private object context. History discovery appears only in a separately labelled follow-on design panel.
+
+```text
+MY COLLECTION — Private                     Add a physical copy
+Search my copies
+[Neutral image] Paper Comet · R-A · My copy C-A1
+[Neutral image] Paper Comet · R-A · My copy C-A2
+
+Paper Comet > Sample Console > Release R-A > My copy C-A1
+MY PHYSICAL COPY — Private
+[Neutral image]  Manual present · condition unknown
+Edit my copy | Add another copy | View catalogue release
+
+FOLLOW-ON DESIGN ONLY — NOT A LIVE EXHIBIT
+Historical context for the game
+Claim classification | Source locator | Correction route
+No historical text or working publication/submission is supplied.
+```
+
+On narrow screens the breadcrumb wraps as readable text and copy actions precede the optional history panel. Use headings and ordinary links, not hover-only discovery or an obligatory carousel. Risk to evaluate: history could distract from editing or suggest that an exhibit is already delivered. The panel belongs to F-09/GC-I-025–026 only if approved; it is omitted from the first-slice application.
+
+### Comparison and selection evidence
+
+Product designer prepares annotated screen/state variants; QA independently reviews the evaluation matrix; the human owner selects or requests revision. These are proposed handoffs, not accepted assignments. No candidate is preferred or scored as tested here.
+
+| Evaluation | Same task for every direction | Record before selection |
+| --- | --- | --- |
+| Copy/release clarity — AC-01/02 | Identify R-A, distinguish C-A1/C-A2, then edit only C-A1. | Participant explanation, misidentifications and resulting revisions. |
+| Entry and recovery — F-02–05/10 | Add a copy, cancel, encounter a failed save and an unmatched item. | Steps, hesitation/errors, observed completion time if measured, safe recovery. No target time is assumed. |
+| Mobile readability — AC-06 | Read titles/labels/actions on the agreed narrow viewport and at zoom. | Exact viewport/zoom, overflow and truncation observations. |
+| Keyboard/accessibility — NFR-01 | Traverse search, add, copy detail, errors and return focus. | Focus order, names, feedback and barriers; static annotations are not conformance results. |
+| Museum character — R3 | Explain what makes an ordinary inexpensive item worthy of attention. | Qualitative feedback on typography, hierarchy and imagery without price/rarity prestige. |
+| History discovery — R5 follow-on only | Inspect C's labelled history panel without confusing it with live content. | Comprehension of deferred status, citations and private-versus-catalogue boundaries. |
+
+Selection must record direction, rationale, rejected alternatives, artifact revision, actual evaluation results/limitations and human approval/date. Before handoff, approve type scale, contrast palette, spacing, focus/error states, image fallback and responsive rules; these wireframes do not select token values. Approved design direction does not approve the stack, photos, exhibits, sharing, or release.

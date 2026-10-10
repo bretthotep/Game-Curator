@@ -65,13 +65,36 @@ A visual reference library is useful for maintaining direction across Copilot se
 
 ## Recommended next actions
 
-1. Product owner reviews the open decisions and approves the MVP's exact first-slice boundary.
-2. Prepare 2–3 collection/detail screen directions using the visual-reference library.
-3. Define the first-slice user journey, sample catalogue records, owned-copy fields, and export contract.
-4. Run a bounded auth/authorization and persistence spike; document measured results.
-5. Approve an ADR and implementation plan before creating production application code.
+1. Product owner reviews the [consolidated Gate 1 package](../operations/open-decisions.md#gate-1-review-package), including exact first-slice boundary, unmatched-item policy, lifecycle and export decisions.
+2. Evaluate the three placeholder-based collection/detail concepts and synthetic collecting scenario; record selection, actual evidence and limitations.
+3. Approve only bounded investigation scope, including an explicit disposition of the media-spike prerequisite. Current prerequisites remain unchanged until an approved amendment.
+4. Run authorized identity/isolation, catalogue, responsive and recovery/cost experiments with synthetic/permitted data; record measured results.
+5. Review Gate 2 evidence, record the human technology-adoption decision and reconcile the ADR before application scaffolding.
 6. Keep each implementation PR small, with acceptance criteria, automated checks, documentation updates, and independent review.
+
+## Follow-up status — Gate 0 review materials
+
+This section distinguishes documentary progress from validation; it does not replace the original review or assert human approval.
+
+- **Documented:** a specification or proposal exists; it is not necessarily approved.
+- **Approved:** a scoped human decision with date, rationale and evidence revision is recorded.
+- **Demonstrated:** an actual experiment/evaluation has reproducible procedure, result and limitations; mocks do not establish real integrations.
+- **Implemented:** accepted application behavior exists with candidate-specific tests and independent review. None is claimed here.
+
+| Earlier recommendation | Current documentary coverage | Approval / demonstration / implementation |
+| --- | --- | --- |
+| Core visual experience | [Three static collection/detail concepts and comparison tasks](../design/design-principles.md#gate-1-collection-and-detail-concepts), including a labelled follow-on history panel | Selection and usability/accessibility evaluation pending; no application UI. |
+| Executable collecting acceptance | [Synthetic two-copy, unmatched-item and owner-export scenario](../product/user-journeys.md#gate-1-synthetic-collecting-scenario); detailed F/NFR criteria | Field/lifecycle/export/missing-entry decisions pending; no executed acceptance tests. |
+| Identity and data boundary | Technical design, privacy evidence matrix and GC-I-005/021 specifications | Authorization spike and human adoption decision pending; no enforced owner boundary exists yet. |
+| Provenance and rights workflow | Domain claim/source/media dictionaries, content policies and GC-I-025/026 specifications | Real source/seed rights review and sourced exhibit remain pending. Do not repeat schema drafting as if no specification exists. |
+| Bounded domain model | Explicit matched/unmatched options and first-slice/deferred dispositions | Final grouping/field constraints and migrations pending; no future tables/services delivered. |
+| Quality and delivery gates | [Evidence/handoff contract](../quality/testing-and-delivery.md#evidence-and-agent-handoff-record), phase acceptance matrix and PR template | Toolchain selection and reproducible CI/test evidence pending. |
+| Reference library | Source/rights intake guidance plus links to the new local placeholder concepts | No external image/reference intake or approved production assets claimed. |
+
+The next useful work is human decision-making and bounded evidence gathering, not more speculative feature specifications. The [pending approval/evidence ledger](../operations/open-decisions.md#approval-and-evidence-ledger) distinguishes architecture direction, media-spike scope and later adoption. Account deletion/retention and operational readiness remain production prerequisites despite optional-feature deferral.
 
 ## Review limitations
 
 This review is based on the README and selected planning documents available through the GitHub connector. It did not execute a local checkout, enumerate every repository path, run tests, inspect all GitHub settings, or perform a dependency/security scan. Findings should therefore be treated as a focused initial review, not a certification of the repository.
+
+The follow-up above reflects a static local documentation review and prepared documentary examples. It adds no runtime, usability, accessibility-conformance, provider, legal or security-certification evidence. Approval of this documentation change is not passage of Gate 1.

@@ -34,6 +34,8 @@ This index is intentionally short: implementation detail and issue dependency sp
 
 Review these together before implementation. GC-I-001 and GC-I-003 must explicitly address missing seed entry handling, including manual entry or provisional release creation; these and collection grouping remain pending Gate 1 product disposition. The safe fallback explains the gap, permits query correction/cancellation and invents no metadata or unconfirmed copy association. GC-I-002/004 supply security, accessibility and interaction constraints rather than assumed technology choices.
 
+Use the [consolidated Gate 1 package and pending ledger](../operations/open-decisions.md#gate-1-review-package) to review the synthetic scenario and three design directions. Direction approval permits only bounded investigations; final technology adoption follows GC-I-010 evidence and a human decision before GC-I-011. The package asks whether GC-I-006 should be resequenced when photos are deferred; this roadmap and the current backlog still require its findings until an approved coordinated amendment is recorded.
+
 ### Gate 2 — GC-I-005–010
 
 | ID | Evidence sequence |

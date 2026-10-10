@@ -16,6 +16,7 @@ This repository is at **Gate 0 — Project Foundation**. It contains project gov
 - [Technology evaluation](docs/architecture/technology-evaluation.md)
 - [Risk and assumption register](docs/operations/risks-and-assumptions.md)
 - [Open product-owner decisions](docs/operations/open-decisions.md)
+- [Gate 1 review package and pending approval/evidence ledger](docs/operations/open-decisions.md#gate-1-review-package)
 - [Quality and delivery strategy](docs/quality/testing-and-delivery.md)
 - [Contributor and agent instructions](.github/copilot-instructions.md)
 
@@ -28,9 +29,9 @@ No GitHub issues, tests, integrations, or deployments are claimed as completed b
 ## Review and build guide
 
 1. Review the requirements and MVP boundary, then the technical design, domain model, privacy controls, and content policies.
-2. Resolve the [open decisions](docs/operations/open-decisions.md) through the Gate 1 approval issues. Diagrams describe proposed workflows, not running services.
+2. Review the [Gate 1 package](docs/operations/open-decisions.md#gate-1-review-package), including three placeholder-based design concepts and a synthetic matched/unmatched-copy scenario. Resolve open decisions through the Gate 1 approval drafts and record human outcomes; the materials themselves approve nothing. Diagrams describe proposed workflows, not running services.
 3. Use the backlog's stable `GC-I-*` identifiers to review and file individual issues. These are detailed issue drafts, **not created GitHub issues**; record real issue URLs when they are filed.
-4. Review Gate 2 evidence before authorizing the private collecting slice. Photos, editorial content, and public/community features remain separately gated; they are not mandatory for a private-first release.
+4. Review Gate 2 evidence and record technology adoption before authorizing the private collecting slice. Photos, editorial content, and public/community features remain separately gated; they are not mandatory for a private-first release. The media-spike prerequisite remains unchanged pending an explicit reviewed scope decision.
 5. Follow the [agent handoff and setup contract](docs/operations/local-development.md) and [acceptance evidence strategy](docs/quality/testing-and-delivery.md). No verified application commands exist yet.
 
 Requirements own feature behavior and acceptance references; the backlog owns work-item scope and dependencies; the roadmap owns phase sequencing; the technical design owns proposed system boundaries. Changes to any of these must update affected references together.

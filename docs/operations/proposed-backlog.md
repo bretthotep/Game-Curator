@@ -15,7 +15,7 @@
 
 1. Organiser reconciles current requirements, MVP, ADRs, policies, and open decisions at a recorded revision. Confirm prerequisite evidence and scope; unresolved access-control, rights, destructive-change, cost, or legal concerns block work.
 2. When authorised tools/permissions exist, open the feature issue template's generated form and populate its fields with one canonical ID/title and the **whole issue section**, including Mermaid: rationale, story, acceptance, dependencies/gate, references, evidence, documentation impact, and DoD. Include the common DoD below. Retain canonical IDs in links until real URLs exist.
-3. Record the returned real issue URL/number, status, accountable specialist, reviewer, and prerequisite URLs in a status ledger. Never substitute fictitious `#001` numbers or imply filing occurred. If tools remain unavailable, hand the issue-ready text to the human owner.
+3. Record the returned real issue URL/number, status, accountable specialist, reviewer, and prerequisite URLs in a status ledger. Start with the [Gate 1 approval/evidence ledger](open-decisions.md#approval-and-evidence-ledger); record exact evidence revisions and separate direction approval from later technology adoption. Never substitute fictitious `#001` numbers or imply filing occurred. If tools remain unavailable, hand the issue-ready text to the human owner.
 4. Specialist confirms a bounded assignment and acceptance baseline before work; organiser coordinates non-overlapping edits. Product manager hands approved behavior to designer/architect; architect/security engineer hand approved boundaries to developer; content curator hands rights/evidence to implementation; developer hands candidate evidence to QA and independent code reviewer; devops engineer hands operational evidence to QA/security and owner.
 5. Record actual commands/results/environment/revision or documentary review evidence, omissions, defects, and decisions. Gate reviewer returns **recommend proceed / revise / blocked**. Only recorded human approval opens the next gate. Amend scope/dependencies through reviewed decisions; do not reinterpret a passed gate after material changes.
 
@@ -933,6 +933,8 @@ flowchart LR
 - **DoD:** Common DoD plus decision-only recommendation; no report product or coverage commitment.
 
 ## Gate 0 alignment checks and next handoff
+
+The [Gate 1 review package](open-decisions.md#gate-1-review-package) consolidates GC-I-001–004 inputs, the synthetic matched/unmatched-copy scenario and three placeholder-based design concepts. It adds no acceptance authority or approval. Its media-spike agenda is a pending decision: GC-I-006/009/010 dependencies remain unchanged until a human-approved amendment reconciles the affected documents.
 
 - **Next proposed handoff:** GC-I-001 to product manager for preparation and human MVP review. This is a recommendation, not a dispatched or accepted assignment.
 - Requirements/MVP/roadmap and architecture may be edited concurrently by other contributors. Before filing, reconcile final revisions against the preserved ID meanings, NFR numbering, canonical title/index, lifecycle and gate dependencies. This file does not amend their authority or approval status.

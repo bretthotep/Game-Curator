@@ -11,9 +11,18 @@
 
 Do not treat user uploads or an automated similarity/screening result as proof of copyright ownership. Provide reporting, takedown, review queues, rate limits, audit history, and a human escalation path for uncertainty/disputes. Obtain legal guidance for repeat infringement and takedown policy.
 
-## Catalogue-view fallback precedence
+## First-slice catalogue fallback proposal
 
-For a public/catalogue game or release card:
+For the proposed private collecting slice (GC-I-018), use:
+
+1. Licensed/otherwise authorized catalogue default artwork only if its applicable source, permission, attribution and intended use have been reviewed.
+2. A neutral branded placeholder when no permitted image exists or an image is unavailable, restricted or revoked.
+
+No artwork source is selected here. Community favourites, voting, generated defaults and personal-photo selection are not first-slice dependencies. Placeholder-only designs are valid review inputs and do not claim image rights. See the [Gate 1 concepts](../design/design-principles.md#gate-1-collection-and-detail-concepts).
+
+## Conditional future catalogue-view precedence
+
+Only after separate feature, rights, cost and moderation approvals, consider this proposed order for a public/catalogue game or release card; this is not approval of public access or a voting system:
 
 1. Approved community favourite, only while approval and rights status remain valid.
 2. Approved GameCurator-generated default.
@@ -24,8 +33,10 @@ Personal photos are never a catalogue fallback. If no approved source exists, us
 
 ## Personal collection-card precedence
 
+The first slice uses the first-slice catalogue fallback above. The following personal selection behavior applies only after the photo follow-on is approved and accepted:
+
 1. The collector's explicitly selected personal photo for that specific copy, while the photo remains available and the collector has not withdrawn it.
-2. The catalogue-view fallback result for its linked game/release (approved community favourite, generated default, documented licensed image, then placeholder).
+2. The eligible catalogue fallback for its linked game/release. Community/generated options participate only after their separate approvals; otherwise use documented permitted catalogue art, then placeholder.
 
 A vote cannot change or replace the personal selection. A missing/unavailable photo falls through without deleting the collector's preference/record; offer a clear replacement action. Never publish the personal photo merely because the collection or a catalogue artwork entry is public.
 

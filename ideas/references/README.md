@@ -27,11 +27,13 @@ Create a category folder only when it has a reference or a useful index to hold.
 
 No image files were present in the repository when this index was prepared. Images attached in chat are not automatically available to GitHub tools. Add the source files or provide accessible source links, then update the index below.
 
+The linked local concepts below use text wireframes and neutral image placeholders only. They are review proposals, not ingested third-party references, approved designs, or production imagery.
+
 ## Reference index
 
 | File / link | Category | What to study | Source / creator | Rights / status |
 | --- | --- | --- | --- | --- |
-| _No references ingested yet_ | — | — | — | Pending asset intake |
+| [Editorial gallery, archive index and object dossier](../../docs/design/design-principles.md#gate-1-collection-and-detail-concepts) | Collection UI / visual direction | Compare copy/release hierarchy, narrow-screen and keyboard behavior, museum character and labelled follow-on history discovery. | Local GameCurator documentary proposals, prepared 2026-10-10; no external image source | Static text/neutral placeholders; human selection and evaluation pending; no production-asset approval |
 
 ## Review checklist
 
