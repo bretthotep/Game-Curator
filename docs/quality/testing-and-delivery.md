@@ -25,8 +25,8 @@ Every implementation PR should have issue/acceptance linkage, focused diff, auto
 ## Gate-aware validation
 
 - Gate 0: cross-check documents and templates; no application tests expected.
-- Gate 1: approval of requirements, architecture/security/design, and ADRs.
-- Gate 2: repeatable spike evidence for the highest-risk assumptions.
+- Gate 1: approval of requirements, architecture/security/design direction and bounded investigation contracts. Record direction approval separately from application-stack/provider adoption; ADR-0001 remains proposed pending Gate 2 evidence.
+- Gate 2: repeatable spike evidence for the highest-risk assumptions; GC-I-010 reconciles results and the ADR, with a recorded human adoption/go-no-go decision before GC-I-011.
 - Gate 3: per-slice tests/review/docs with passing mandatory checks.
 - Gate 4: release candidate test suite, accessibility/security/dependency review, production config, migration, backup/restore, monitoring, and rollback evidence.
 - Gate 5: human approval after a release-readiness report; do not deploy to production or release before approval. Separately approved disposable, synthetic/seed-data experiments and isolated candidate rehearsals may use non-production deployments at earlier gates.
@@ -41,8 +41,8 @@ Use the [requirements](../product/requirements.md) for acceptance semantics and 
 
 | Phase / work items | Evidence required before closure |
 | --- | --- |
-| Gate 1 / GC-I-001–GC-I-004 | Product-owner decisions; approved field/lifecycle/privacy scope; architecture/security and content-rights review; design/accessibility contract. Record deferred choices and blocking decisions. |
-| Gate 2 / GC-I-005–GC-I-010 | Reproducible experiments with environment, steps, actual results, negative cases, cleanup, current terms/cost sources, limitations, and human go/no-go review. A mock cannot establish provider integration. |
+| Gate 1 / GC-I-001–GC-I-004 | Product-owner decisions; approved field/lifecycle/privacy scope; architecture/security direction and content-rights review; design/accessibility contract and bounded investigation authorization. Record deferred choices and blocking decisions; direction approval is not final technology adoption. |
+| Gate 2 / GC-I-005–GC-I-010 | Reproducible experiments with environment, steps, actual results, negative cases, cleanup, current terms/cost sources, limitations, revised ADR and human adoption/go-no-go review before GC-I-011. A mock cannot establish provider integration. |
 | Gate 3a / GC-I-011–GC-I-022 | AC-01–AC-09: domain fixtures for multiple releases/copies and unknown data; session and owner-isolation integration checks; catalogue/add/view/edit/export journeys; keyboard/narrow viewport evidence; reproducible CI on the candidate commit; independent review. |
 | Gate 3b / GC-I-023–GC-I-028 | AC-10, AC-11, AC-14 for selected features: upload rejection/private lifecycle; photo fallback; filter/count semantics; claim/source/correction review and version history. Deletion/retention must be evidenced before production personal data, even if other follow-ons are omitted. |
 | Gate 3c, optional / GC-I-029–GC-I-033 | AC-12–AC-13: explicit sharing and separate media consent, anonymous/public field allow-list, revocation/cache handling, moderation/report/takedown, abuse and rights escalation. |
